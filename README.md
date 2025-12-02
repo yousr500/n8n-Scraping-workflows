@@ -1,4 +1,19 @@
 # n8n-Scraping-workflows
+## 🖼️ Data Processing Workflows
+
+### Workflow: Product Extraction and Database Insertion
+
+This workflow retrieves product data, processes it, and inserts it into a PostgreSQL database.
+![PostgreSQL Insertion Workflow](n8n-Scraping-workflows/Screenshot 2025-08-19 162213.png)
+
+---
+
+### Workflow: Product Data Update
+
+This workflow is triggered manually and is responsible for fetching updated product information and updating existing rows in the table.
+![Database Update Workflow](n8n-Scraping-workflows/Screenshot 2025-08-25 123129.png)
+
+---
 ## ⚙️ Automated Workflow Diagrams
 
 These diagrams illustrate the logical flow and processing steps for various data operations within this system, including product retrieval, image processing, database updates, and data export.
@@ -14,17 +29,17 @@ These workflows handle fetching product lists, processing associated images (val
 | **Detailed Product Data, Image Processing, and DB Insertion** | A complex workflow involving initial fetching, debugging, detailed data extraction, parallel image processing (extract, validate, compress), merging, and final DB insertion. | `Screenshot 2025-08-19 162100.png` |
 
 #### Workflow V1: Image Processing and DB Insertion
-![Product Retrieval, Image Processing, and DB Insertion Workflow V1](Screenshot 2025-08-30 124012.png)
+![Product Retrieval, Image Processing, and DB Insertion Workflow V1](n8n-Scraping-workflows/Screenshot 2025-08-30 124012.png)
 
 ---
 
 #### Workflow V2: Image Processing and DB Insertion
-![Product Retrieval, Image Processing, and DB Insertion Workflow V2](Screenshot 2025-08-30 125618.png)
+![Product Retrieval, Image Processing, and DB Insertion Workflow V2](n8n-Scraping-workflows/Screenshot 2025-08-30 125618.png)
 
 ---
 
 #### Detailed Extraction and Image Processing
-![Detailed Product Data, Image Processing, and DB Insertion Workflow](Screenshot 2025-08-19 162100.png)
+![Detailed Product Data, Image Processing, and DB Insertion Workflow](n8n-Scraping-workflows/Screenshot 2025-08-19 162100.png)
 
 ---
 
@@ -38,12 +53,12 @@ These focus on initial data extraction, preparation, and bulk loading into the d
 | **Feature Data Merge and PostgreSQL Load** | Fetches two distinct data streams (`Feature Values` and `Product Features`) via API calls, merges the results, builds a feature map, and inserts the structure into PostgreSQL. | `Screenshot 2025-08-19 162648.png` |
 
 #### Main Page Extract and PostgreSQL Load
-![Main Page Extract, Process, and PostgreSQL Load Workflow](Screenshot 2025-08-19 162213.png)
+![Main Page Extract, Process, and PostgreSQL Load Workflow](n8n-Scraping-workflows/Screenshot 2025-08-19 162213.png)
 
 ---
 
 #### Feature Data Merge and PostgreSQL Load
-![Feature Data Merge and PostgreSQL Load Workflow](Screenshot 2025-08-19 162648.png)
+![Feature Data Merge and PostgreSQL Load Workflow](n8n-Scraping-workflows/Screenshot 2025-08-19 162648.png)
 
 ---
 
@@ -57,9 +72,9 @@ These cover periodic updates and final data output.
 | **Data Extraction, CSV Preparation, and Google Drive Export** | Extracts data from a URL, processes it, prepares the final data structure, converts it to binary (for file handling), and uploads the resulting file to Google Drive. | `Screenshot 2025-08-19 162321.png` |
 
 #### Product List Fetch and Database Update
-![Product List Fetch and Database Update Workflow](Screenshot 2025-08-25 123129.png)
+![Product List Fetch and Database Update Workflow](n8n-Scraping-workflows/Screenshot 2025-08-25 123129.png)
 
 ---
 
 #### Data Extraction and Google Drive Export
-![Data Extraction, CSV Preparation, and Google Drive Export Workflow](assets/images/Screenshot 2025-08-19 162321.png)
+![Data Extraction, CSV Preparation, and Google Drive Export Workflow](n8n-Scraping-workflows/Screenshot 2025-08-19 162321.png)
